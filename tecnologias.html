@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tecnologías — SoftMex</title>
+  <meta name="description" content="Stack tecnológico de SoftMex: React, Node.js, Python, IA, AWS, Azure, Docker y más de 40 tecnologías." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">SoftMex</a>
+        <ul class="nav-links">
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="tecnologias.html">Tecnologías</a></li>
+          <li><a href="proceso.html">Proceso</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="index.html#contacto" class="btn btn-primary">Contáctanos</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <i data-lucide="menu" width="20" height="20"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Cerrar menú"><i data-lucide="x" width="20" height="20"></i></button>
+    <a href="servicios.html"   onclick="closeMobileMenu()">Servicios</a>
+    <a href="nosotros.html"    onclick="closeMobileMenu()">Nosotros</a>
+    <a href="tecnologias.html" onclick="closeMobileMenu()">Tecnologías</a>
+    <a href="proceso.html"     onclick="closeMobileMenu()">Proceso</a>
+    <a href="clientes.html"    onclick="closeMobileMenu()">Clientes</a>
+    <a href="index.html#contacto" class="btn btn-primary" onclick="closeMobileMenu()"><i data-lucide="send" width="16" height="16"></i> Contáctanos</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg-dots"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <span class="section-label"><i data-lucide="cpu" width="11" height="11"></i> Stack Tecnológico</span>
+        <h1>Dominamos las tecnologías que <span class="grad-text">impulsan el mundo</span></h1>
+        <p>Más de 40 tecnologías, frameworks y plataformas en constante actualización para entregar soluciones modernas y escalables.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- STACK GRID -->
+  <section class="section tech-section">
+    <div class="container">
+      <div class="tech-categories reveal">
+
+        <div>
+          <div class="tech-category-label">Frontend</div>
+          <div class="tech-badges">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Vue.js</span>
+            <span class="tech-badge">Angular</span>
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge">Svelte</span>
+            <span class="tech-badge">Astro</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-category-label">Backend</div>
+          <div class="tech-badges">
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Django</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">Laravel</span>
+            <span class="tech-badge">.NET / C#</span>
+            <span class="tech-badge">Go</span>
+            <span class="tech-badge">Java · Spring Boot</span>
+            <span class="tech-badge">Ruby on Rails</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-category-label">Inteligencia Artificial &amp; ML</div>
+          <div class="tech-badges">
+            <span class="tech-badge">OpenAI API</span>
+            <span class="tech-badge">Anthropic Claude</span>
+            <span class="tech-badge">LangChain</span>
+            <span class="tech-badge">LlamaIndex</span>
+            <span class="tech-badge">TensorFlow</span>
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">Hugging Face</span>
+            <span class="tech-badge">Ollama</span>
+            <span class="tech-badge">Pinecone</span>
+            <span class="tech-badge">ChromaDB</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-category-label">Cloud &amp; DevOps</div>
+          <div class="tech-badges">
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Google Cloud</span>
+            <span class="tech-badge">Microsoft Azure</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">Kubernetes</span>
+            <span class="tech-badge">GitHub Actions</span>
+            <span class="tech-badge">Terraform</span>
+            <span class="tech-badge">Nginx</span>
+            <span class="tech-badge">Cloudflare</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-category-label">Bases de Datos</div>
+          <div class="tech-badges">
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Redis</span>
+            <span class="tech-badge">Elasticsearch</span>
+            <span class="tech-badge">Supabase</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">DynamoDB</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-category-label">Mobile</div>
+          <div class="tech-badges">
+            <span class="tech-badge">React Native</span>
+            <span class="tech-badge">Flutter</span>
+            <span class="tech-badge">iOS · Swift</span>
+            <span class="tech-badge">Android · Kotlin</span>
+            <span class="tech-badge">Expo</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-category-label">E-commerce &amp; CMS</div>
+          <div class="tech-badges">
+            <span class="tech-badge">Shopify</span>
+            <span class="tech-badge">WooCommerce</span>
+            <span class="tech-badge">Magento</span>
+            <span class="tech-badge">Strapi</span>
+            <span class="tech-badge">Contentful</span>
+            <span class="tech-badge">WordPress</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="tech-category-label">Pagos &amp; Integraciones</div>
+          <div class="tech-badges">
+            <span class="tech-badge">Stripe</span>
+            <span class="tech-badge">Conekta</span>
+            <span class="tech-badge">MercadoPago</span>
+            <span class="tech-badge">PayPal</span>
+            <span class="tech-badge">Twilio</span>
+            <span class="tech-badge">SendGrid</span>
+            <span class="tech-badge">Salesforce</span>
+            <span class="tech-badge">SAP</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CERTIFICATIONS STRIP -->
+  <section class="section" style="background:var(--bg)">
+    <div class="container">
+      <div class="reveal" style="text-align:center;margin-bottom:3rem">
+        <span class="section-label"><i data-lucide="badge-check" width="11" height="11"></i> Certificaciones</span>
+        <h2 class="section-title">Conocimiento <span class="grad-text">certificado</span> internacionalmente</h2>
+        <p class="section-subtitle" style="margin:0 auto">Nuestro equipo mantiene certificaciones activas en las principales plataformas tecnológicas del mundo.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center" class="reveal">
+        <div class="glass-card" style="padding:1.5rem 2rem;text-align:center;min-width:160px">
+          <div style="font-size:2rem;margin-bottom:.5rem">☁️</div>
+          <strong style="font-family:var(--font-display);font-size:.9rem">AWS</strong><br>
+          <span style="font-size:.78rem;color:var(--muted)">Solutions Architect</span>
+        </div>
+        <div class="glass-card" style="padding:1.5rem 2rem;text-align:center;min-width:160px">
+          <div style="font-size:2rem;margin-bottom:.5rem">🔵</div>
+          <strong style="font-family:var(--font-display);font-size:.9rem">Azure</strong><br>
+          <span style="font-size:.78rem;color:var(--muted)">Developer Associate</span>
+        </div>
+        <div class="glass-card" style="padding:1.5rem 2rem;text-align:center;min-width:160px">
+          <div style="font-size:2rem;margin-bottom:.5rem">🟢</div>
+          <strong style="font-family:var(--font-display);font-size:.9rem">Google Cloud</strong><br>
+          <span style="font-size:.78rem;color:var(--muted)">Professional Engineer</span>
+        </div>
+        <div class="glass-card" style="padding:1.5rem 2rem;text-align:center;min-width:160px">
+          <div style="font-size:2rem;margin-bottom:.5rem">⚙️</div>
+          <strong style="font-family:var(--font-display);font-size:.9rem">Kubernetes</strong><br>
+          <span style="font-size:.78rem;color:var(--muted)">CKA Certified</span>
+        </div>
+        <div class="glass-card" style="padding:1.5rem 2rem;text-align:center;min-width:160px">
+          <div style="font-size:2rem;margin-bottom:.5rem">🤖</div>
+          <strong style="font-family:var(--font-display);font-size:.9rem">TensorFlow</strong><br>
+          <span style="font-size:.78rem;color:var(--muted)">Developer Certificate</span>
+        </div>
+        <div class="glass-card" style="padding:1.5rem 2rem;text-align:center;min-width:160px">
+          <div style="font-size:2rem;margin-bottom:.5rem">☁️</div>
+          <strong style="font-family:var(--font-display);font-size:.9rem">Salesforce</strong><br>
+          <span style="font-size:.78rem;color:var(--muted)">Administrator</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="reveal">
+        <h2>¿Tu proyecto necesita <span class="grad-text">estas tecnologías</span>?</h2>
+        <p>Cuéntanos los requerimientos técnicos y armamos la solución ideal para ti.</p>
+        <div class="cta-btns">
+          <a href="index.html#contacto" class="btn btn-primary" style="font-size:1.05rem;padding:1rem 2.25rem">
+            <i data-lucide="calendar" width="18" height="18"></i> Hablar con un especialista
+          </a>
+          <a href="proceso.html" class="btn btn-outline">
+            <i data-lucide="git-branch" width="16" height="16"></i> Ver nuestro proceso
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.55rem">SoftMex</a>
+          <p class="footer-brand-desc">Empresa mexicana especializada en desarrollo de software, automatización e inteligencia artificial. Más de 20 años transformando negocios.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" width="17" height="17"></i></a>
+            <a href="#" aria-label="GitHub"><i data-lucide="github" width="17" height="17"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" width="17" height="17"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Creación de Sistemas</a></li>
+            <li><a href="servicios.html">Integración de IA</a></li>
+            <li><a href="servicios.html">E-commerce</a></li>
+            <li><a href="servicios.html">Outsourcing</a></li>
+            <li><a href="servicios.html">Agentes IA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="tecnologias.html">Tecnologías</a></li>
+            <li><a href="proceso.html">Proceso</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:contacto@softmex.mx">contacto@softmex.mx</a></li>
+            <li><a href="tel:+525512345678">+52 (55) 1234-5678</a></li>
+            <li><a href="index.html#contacto">Formulario</a></li>
+            <li><a href="https://wa.me/5215512345678" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SoftMex. Todos los derechos reservados.</p>
+        <p>Hecho con <span style="color:var(--primary)">♥</span> en México 🇲🇽</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

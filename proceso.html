@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proceso — SoftMex</title>
+  <meta name="description" content="Conoce el proceso de trabajo de SoftMex: consultoría, análisis, diseño, desarrollo ágil, QA y despliegue." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">SoftMex</a>
+        <ul class="nav-links">
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="tecnologias.html">Tecnologías</a></li>
+          <li><a href="proceso.html">Proceso</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="index.html#contacto" class="btn btn-primary">Contáctanos</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <i data-lucide="menu" width="20" height="20"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Cerrar menú"><i data-lucide="x" width="20" height="20"></i></button>
+    <a href="servicios.html"   onclick="closeMobileMenu()">Servicios</a>
+    <a href="nosotros.html"    onclick="closeMobileMenu()">Nosotros</a>
+    <a href="tecnologias.html" onclick="closeMobileMenu()">Tecnologías</a>
+    <a href="proceso.html"     onclick="closeMobileMenu()">Proceso</a>
+    <a href="clientes.html"    onclick="closeMobileMenu()">Clientes</a>
+    <a href="index.html#contacto" class="btn btn-primary" onclick="closeMobileMenu()"><i data-lucide="send" width="16" height="16"></i> Contáctanos</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg-dots"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <span class="section-label"><i data-lucide="git-branch" width="11" height="11"></i> Proceso de trabajo</span>
+        <h1>De la idea al producto <span class="grad-text">en pasos claros</span></h1>
+        <p>Nuestra metodología garantiza transparencia, calidad y entregas puntuales en cada fase del proyecto. Sin sorpresas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PASOS -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="process-grid">
+
+        <div class="glass-card process-card reveal" style="transition-delay:.05s">
+          <div class="process-num">01</div>
+          <h3>Consultoría Inicial</h3>
+          <p>Analizamos tu negocio, retos y objetivos en una sesión sin costo. Entendemos qué tecnología realmente necesitas, no la que está de moda. Escuchamos antes de proponer.</p>
+        </div>
+
+        <div class="glass-card process-card reveal" style="transition-delay:.1s">
+          <div class="process-num">02</div>
+          <h3>Análisis y Propuesta</h3>
+          <p>Definimos el alcance exacto del proyecto, estimamos tiempos y costos con total transparencia. Recibes un documento detallado antes de firmar cualquier cosa.</p>
+        </div>
+
+        <div class="glass-card process-card reveal" style="transition-delay:.15s">
+          <div class="process-num">03</div>
+          <h3>Diseño y Arquitectura</h3>
+          <p>Diseñamos la arquitectura técnica y los flujos UI/UX antes de escribir una sola línea de código. Evitamos retrabajo costoso y nos aseguramos de que todos estemos alineados.</p>
+        </div>
+
+        <div class="glass-card process-card reveal" style="transition-delay:.2s">
+          <div class="process-num">04</div>
+          <h3>Desarrollo Ágil</h3>
+          <p>Trabajamos en sprints cortos de 1-2 semanas con entregas parciales reales. Tienes visibilidad total del progreso y puedes dar retroalimentación en cada iteración.</p>
+        </div>
+
+        <div class="glass-card process-card reveal" style="transition-delay:.25s">
+          <div class="process-num">05</div>
+          <h3>QA y Pruebas</h3>
+          <p>Testing exhaustivo: funcional, de rendimiento, seguridad y accesibilidad. No entregamos hasta que el producto esté listo para funcionar bajo carga real.</p>
+        </div>
+
+        <div class="glass-card process-card reveal" style="transition-delay:.3s">
+          <div class="process-num">06</div>
+          <h3>Despliegue y Soporte</h3>
+          <p>Lanzamiento controlado en producción con monitoreo activo. Soporte post-lanzamiento incluido y capacitación para tu equipo si es necesario.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;margin-bottom:3rem">
+        <span class="section-label"><i data-lucide="help-circle" width="11" height="11"></i> Preguntas frecuentes</span>
+        <h2 class="section-title">Lo que más nos preguntan</h2>
+      </div>
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Cuánto tiempo tarda en desarrollarse un sistema?
+            <i data-lucide="plus" class="faq-icon" width="20" height="20"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Depende del alcance. Un MVP funcional suele estar listo en 4-8 semanas. Un sistema ERP completo puede tomar 3-6 meses. Siempre te damos un estimado detallado antes de comenzar y trabajamos por fases para que tengas entregables reales desde el primer sprint.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Cómo manejan los cambios de alcance durante el proyecto?
+            <i data-lucide="plus" class="faq-icon" width="20" height="20"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Los cambios son naturales en cualquier proyecto. Usamos un proceso formal de change request donde documentamos el impacto en tiempo y costo antes de implementar cualquier cambio. Nada sorpresivo en tu factura.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Con qué frecuencia se comunican con el cliente?
+            <i data-lucide="plus" class="faq-icon" width="20" height="20"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Al menos una vez por semana con una videollamada de avance. Además tienes acceso a tu tablero de proyecto en tiempo real, y nuestro equipo está disponible por Slack o WhatsApp para dudas puntuales durante el horario laboral.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿El código es mío al terminar el proyecto?
+            <i data-lucide="plus" class="faq-icon" width="20" height="20"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, absolutamente. Al finalizar el proyecto recibes el 100% del código fuente, la documentación técnica y acceso completo a todos los repositorios y servidores. Tú eres dueño de todo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Ofrecen mantenimiento después del lanzamiento?
+            <i data-lucide="plus" class="faq-icon" width="20" height="20"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sí. Ofrecemos planes de mantenimiento mensual que incluyen corrección de bugs, actualizaciones de seguridad, monitoreo y soporte técnico. También puedes contratar horas adicionales de desarrollo según necesites.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="reveal">
+        <h2>¿Listo para <span class="grad-text">comenzar</span>?</h2>
+        <p>El primer paso es una consultoría gratuita donde analizamos tu proyecto sin ningún compromiso.</p>
+        <div class="cta-btns">
+          <a href="index.html#contacto" class="btn btn-primary" style="font-size:1.05rem;padding:1rem 2.25rem">
+            <i data-lucide="calendar" width="18" height="18"></i> Agendar consultoría gratuita
+          </a>
+          <a href="servicios.html" class="btn btn-outline">
+            <i data-lucide="layers" width="16" height="16"></i> Ver servicios
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.55rem">SoftMex</a>
+          <p class="footer-brand-desc">Empresa mexicana especializada en desarrollo de software, automatización e inteligencia artificial. Más de 20 años transformando negocios.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" width="17" height="17"></i></a>
+            <a href="#" aria-label="GitHub"><i data-lucide="github" width="17" height="17"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" width="17" height="17"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Creación de Sistemas</a></li>
+            <li><a href="servicios.html">Integración de IA</a></li>
+            <li><a href="servicios.html">E-commerce</a></li>
+            <li><a href="servicios.html">Outsourcing</a></li>
+            <li><a href="servicios.html">Agentes IA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="tecnologias.html">Tecnologías</a></li>
+            <li><a href="proceso.html">Proceso</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:contacto@softmex.mx">contacto@softmex.mx</a></li>
+            <li><a href="tel:+525512345678">+52 (55) 1234-5678</a></li>
+            <li><a href="index.html#contacto">Formulario</a></li>
+            <li><a href="https://wa.me/5215512345678" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SoftMex. Todos los derechos reservados.</p>
+        <p>Hecho con <span style="color:var(--primary)">♥</span> en México 🇲🇽</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

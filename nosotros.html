@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros — SoftMex</title>
+  <meta name="description" content="Conoce al equipo de SoftMex: más de 20 años de experiencia, certificaciones internacionales y proyectos en México y USA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">SoftMex</a>
+        <ul class="nav-links">
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="tecnologias.html">Tecnologías</a></li>
+          <li><a href="proceso.html">Proceso</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="index.html#contacto" class="btn btn-primary">Contáctanos</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <i data-lucide="menu" width="20" height="20"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Cerrar menú"><i data-lucide="x" width="20" height="20"></i></button>
+    <a href="servicios.html"   onclick="closeMobileMenu()">Servicios</a>
+    <a href="nosotros.html"    onclick="closeMobileMenu()">Nosotros</a>
+    <a href="tecnologias.html" onclick="closeMobileMenu()">Tecnologías</a>
+    <a href="proceso.html"     onclick="closeMobileMenu()">Proceso</a>
+    <a href="clientes.html"    onclick="closeMobileMenu()">Clientes</a>
+    <a href="index.html#contacto" class="btn btn-primary" onclick="closeMobileMenu()"><i data-lucide="send" width="16" height="16"></i> Contáctanos</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg-dots"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <span class="section-label"><i data-lucide="award" width="11" height="11"></i> Nosotros</span>
+        <h1>Experiencia que <span class="grad-text">marca la diferencia</span></h1>
+        <p>Más de dos décadas transformando empresas con tecnología de vanguardia, equipos certificados y metodologías probadas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- STATS + DESCRIPCIÓN -->
+  <section class="section about-section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="reveal-left">
+          <span class="section-label"><i data-lucide="users" width="11" height="11"></i> El equipo</span>
+          <h2 class="section-title">Talento mexicano con<br><span class="grad-text">alcance internacional</span></h2>
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:1rem">
+            Somos un equipo de desarrolladores, arquitectos de software y especialistas en IA con postgrados, maestrías y certificaciones internacionales. Más de dos décadas transformando ideas en soluciones robustas para empresas en México y Estados Unidos.
+          </p>
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:1.5rem">
+            No somos una agencia de outsourcing genérica. Somos un equipo técnico de alto nivel que se involucra desde el primer día para entender tu negocio y diseñar soluciones que realmente funcionen.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="feature-icon"><i data-lucide="graduation-cap" width="16" height="16"></i></div>
+              <div>
+                <h4>Formación de élite</h4>
+                <p>Postgrados, maestrías y diplomados en tecnología, IA y negocios digitales</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i data-lucide="badge-check" width="16" height="16"></i></div>
+              <div>
+                <h4>Certificaciones internacionales</h4>
+                <p>AWS, Google Cloud, Azure, Salesforce, Kubernetes y más plataformas líderes</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i data-lucide="globe-2" width="16" height="16"></i></div>
+              <div>
+                <h4>Presencia internacional</h4>
+                <p>Proyectos activos en México, Estados Unidos y Latinoamérica</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i data-lucide="shield" width="16" height="16"></i></div>
+              <div>
+                <h4>Comprometidos con la calidad</h4>
+                <p>Revisiones de código, pruebas automatizadas y documentación en cada entrega</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-grid reveal-right">
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="20" data-suffix="+">0+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="150" data-suffix="+">0+</span>
+            <span class="stat-label">Proyectos entregados</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="80" data-suffix="+">0+</span>
+            <span class="stat-label">Clientes satisfechos</span>
+          </div>
+          <div class="glass-card stat-card">
+            <span class="stat-number" data-target="15" data-suffix="+">0+</span>
+            <span class="stat-label">Certificaciones</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- VALORES -->
+  <section class="section" style="background:var(--bg-2)">
+    <div class="container">
+      <div class="reveal" style="text-align:center;margin-bottom:3rem">
+        <span class="section-label"><i data-lucide="heart" width="11" height="11"></i> Valores</span>
+        <h2 class="section-title">Lo que nos mueve cada día</h2>
+      </div>
+      <div class="values-grid">
+        <div class="glass-card value-card reveal" style="transition-delay:.05s">
+          <div class="value-card-icon" style="background:rgba(0,212,255,0.12);color:#00d4ff">
+            <i data-lucide="target" width="22" height="22"></i>
+          </div>
+          <h3>Resultados sobre excusas</h3>
+          <p>Nos enfocamos en entregar soluciones que funcionen, no en justificar por qué no funcionaron. El código habla por sí solo.</p>
+        </div>
+        <div class="glass-card value-card reveal" style="transition-delay:.1s">
+          <div class="value-card-icon" style="background:rgba(99,102,241,0.12);color:#818cf8">
+            <i data-lucide="message-square" width="22" height="22"></i>
+          </div>
+          <h3>Comunicación radical</h3>
+          <p>Sin tecnicismos innecesarios. Te explicamos el estado de tu proyecto en términos que puedas compartir con tu equipo.</p>
+        </div>
+        <div class="glass-card value-card reveal" style="transition-delay:.15s">
+          <div class="value-card-icon" style="background:rgba(168,85,247,0.12);color:#c084fc">
+            <i data-lucide="lightbulb" width="22" height="22"></i>
+          </div>
+          <h3>Curiosidad tecnológica</h3>
+          <p>Mantenemos nuestro stack actualizado. Adoptamos nuevas tecnologías cuando tienen sentido para tu negocio, no por moda.</p>
+        </div>
+        <div class="glass-card value-card reveal" style="transition-delay:.2s">
+          <div class="value-card-icon" style="background:rgba(52,211,153,0.12);color:#34d399">
+            <i data-lucide="handshake" width="22" height="22"></i>
+          </div>
+          <h3>Alianza a largo plazo</h3>
+          <p>No buscamos proyectos de una sola vez. Construimos relaciones duraderas donde somos tu equipo tecnológico de confianza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="reveal">
+        <h2>¿Quieres trabajar con<br><span class="grad-text">nuestro equipo</span>?</h2>
+        <p>Platiquemos sobre tu proyecto. La primera consultoría es completamente gratuita.</p>
+        <div class="cta-btns">
+          <a href="index.html#contacto" class="btn btn-primary" style="font-size:1.05rem;padding:1rem 2.25rem">
+            <i data-lucide="calendar" width="18" height="18"></i> Agendar consultoría gratuita
+          </a>
+          <a href="clientes.html" class="btn btn-outline">
+            <i data-lucide="star" width="16" height="16"></i> Ver testimonios
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.55rem">SoftMex</a>
+          <p class="footer-brand-desc">Empresa mexicana especializada en desarrollo de software, automatización e inteligencia artificial. Más de 20 años transformando negocios.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" width="17" height="17"></i></a>
+            <a href="#" aria-label="GitHub"><i data-lucide="github" width="17" height="17"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" width="17" height="17"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Creación de Sistemas</a></li>
+            <li><a href="servicios.html">Integración de IA</a></li>
+            <li><a href="servicios.html">E-commerce</a></li>
+            <li><a href="servicios.html">Outsourcing</a></li>
+            <li><a href="servicios.html">Agentes IA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="tecnologias.html">Tecnologías</a></li>
+            <li><a href="proceso.html">Proceso</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:contacto@softmex.mx">contacto@softmex.mx</a></li>
+            <li><a href="tel:+525512345678">+52 (55) 1234-5678</a></li>
+            <li><a href="index.html#contacto">Formulario</a></li>
+            <li><a href="https://wa.me/5215512345678" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SoftMex. Todos los derechos reservados.</p>
+        <p>Hecho con <span style="color:var(--primary)">♥</span> en México 🇲🇽</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
